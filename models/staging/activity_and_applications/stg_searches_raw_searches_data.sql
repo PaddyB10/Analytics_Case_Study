@@ -1,1 +1,2 @@
-select * from raw_nw_se.searches.searches_data
+select *
+from {{ source('searches', 'searches_data') }}

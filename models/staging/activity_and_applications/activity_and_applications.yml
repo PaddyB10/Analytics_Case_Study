@@ -3,7 +3,7 @@ sources:
     database: raw_nw_se
     schema: searches
     tables:
-      - name: searches
+      - name: searches_data
   - name: applications
     database: raw_nw_se
     schema: applications
