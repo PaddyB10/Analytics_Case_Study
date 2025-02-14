@@ -5,4 +5,4 @@ application,
 created_at,
 tracking_token
 
-from raw_nw_se.applications.applications_data
+from {{ source('applications', 'applications_data') }}

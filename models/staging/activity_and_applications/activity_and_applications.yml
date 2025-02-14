@@ -1,0 +1,11 @@
+sources:
+  - name: searches
+    database: raw_nw_se
+    schema: searches
+    tables:
+      - name: searches
+  - name: applications
+    database: raw_nw_se
+    schema: applications
+    tables:
+      - name: applications_data
