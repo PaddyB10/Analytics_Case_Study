@@ -1,0 +1,1 @@
+select * from raw_nw_se.searches.searches_data
