@@ -7,7 +7,7 @@ clicks as (
 ),
 
 ctr as (
-   select (select count(*) from impressions) / CAST((select count(*) from clicks) as float)
+   select (select count(*) from clicks) / CAST((select count(*) from impressions) as float) * 100
 )  
 
 select * from ctr
