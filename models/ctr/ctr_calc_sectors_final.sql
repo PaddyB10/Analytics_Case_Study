@@ -1,25 +1,25 @@
 
 with ranked_data as (
     select 
-        COMPANY_INDUSTRY_NAME,
-        _MONTH,
-        _COUNT,
-        lag(_COUNT) over (
-            partition by COMPANY_INDUSTRY_NAME 
-            order by _MONTH, _EVENT
+        company_industry_name,
+        _month,
+        _count,
+        lag(_count) over (
+            partition by company_industry_name 
+            order by _month, _event
         ) as prev_count
     from {{ ref ('ctr_calc_sectors_primer') }}
 ),
 
 ctr_data as ( 
     select 
-        COMPANY_INDUSTRY_NAME,
-        _MONTH,
-        _COUNT,
+        company_industry_name,
+        _month,
+        _count,
         prev_count,
         case 
             when prev_count IS NOT NULL AND prev_count != 0 
-            then _COUNT * 1.0 / prev_count * 100
+            then _count * 1.0 / prev_count * 100
             else NULL 
         end as ctr
     from ranked_data
