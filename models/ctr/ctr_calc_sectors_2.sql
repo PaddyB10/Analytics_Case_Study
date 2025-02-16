@@ -19,4 +19,5 @@ SELECT
         THEN _COUNT * 1.0 / prev_count 
         ELSE NULL 
     END AS count_ratio
-FROM ranked_data;
+FROM ranked_data
+order by COMPANY_INDUSTRY_NAME

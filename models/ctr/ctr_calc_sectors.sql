@@ -18,6 +18,7 @@ ctr_setup as (
 )
 
 select * from ctr_setup
+order by company_industry_name, _month, _event
 
 
 
