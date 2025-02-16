@@ -7,7 +7,7 @@ WITH ranked_data AS (
             PARTITION BY COMPANY_INDUSTRY_NAME 
             ORDER BY _MONTH
         ) AS prev_count
-    FROM {{ ref ('ctr_calc_sectors') }}
+    FROM {{ ref ('ctr_calc_sectors_primer') }}
 )
 SELECT 
     COMPANY_INDUSTRY_NAME,

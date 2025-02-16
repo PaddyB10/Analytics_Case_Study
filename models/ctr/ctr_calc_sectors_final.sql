@@ -8,7 +8,7 @@ with ranked_data as (
             partition by COMPANY_INDUSTRY_NAME 
             order by _MONTH, _EVENT
         ) as prev_count
-    from {{ ref ('ctr_calc_sectors') }}
+    from {{ ref ('ctr_calc_sectors_primer') }}
 ),
 
 ctr_data as ( 
