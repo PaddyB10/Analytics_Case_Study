@@ -18,5 +18,5 @@ select
         when type = 'opened' and prev_type = 'applied' and posting_id = prev_posting_id 
         then cast(prev_count as float) / nullif(_count, 0) 
         else NULL 
-    end as calculated_value
+    end as application_rate
 from application_rate_postingid
