@@ -1,0 +1,11 @@
+sources:
+  - name: control_raw
+    database: a_b_testing_alpha
+    schema: control_schema
+    tables:
+      - name: raw_control
+  - name: test_raw
+    database: a_b_testing_alpha
+    schema: test_schema
+    tables:
+      - name: raw_test
