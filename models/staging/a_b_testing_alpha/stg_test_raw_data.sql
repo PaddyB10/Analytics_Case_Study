@@ -1,1 +1,1 @@
-select * from {{source ("test_raw", "raw_test")}}
+select * from {{source ("test_raw", "raw_test_updated")}}
