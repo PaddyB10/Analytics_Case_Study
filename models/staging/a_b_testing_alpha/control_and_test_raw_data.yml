@@ -3,9 +3,9 @@ sources:
     database: a_b_testing_alpha
     schema: control_schema
     tables:
-      - name: raw_control
+      - name: raw_control_updated
   - name: test_raw
     database: a_b_testing_alpha
     schema: test_schema
     tables:
-      - name: raw_test
+      - name: raw_test_updated
