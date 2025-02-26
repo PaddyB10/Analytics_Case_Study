@@ -32,6 +32,7 @@ ranked_data as (
 )
 
 
+
 select 
     campaign,
     _date,
@@ -43,4 +44,9 @@ select
         else NULL 
     end as diff_impressions
 from ranked_data
+order by _date,campaign
+
+
+
+
 
