@@ -1,10 +1,10 @@
 sources:
-  - name: control_raw
+  - name: control_raw_updated
     database: a_b_testing_alpha
     schema: control_schema
     tables:
       - name: raw_control_updated
-  - name: test_raw
+  - name: test_raw_updated
     database: a_b_testing_alpha
     schema: test_schema
     tables:
