@@ -1,0 +1,1 @@
+select * from {{source ('control_raw', 'raw_control')}}
