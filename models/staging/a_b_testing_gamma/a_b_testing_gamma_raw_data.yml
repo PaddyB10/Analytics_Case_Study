@@ -1,0 +1,6 @@
+sources:
+  - name: raw_data
+    database: a_b_testing_gamma
+    schema: data_schema
+    tables:
+      - name: raw_data
