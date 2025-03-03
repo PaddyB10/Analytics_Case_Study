@@ -1,0 +1,1 @@
+select * from {{ ref('stg_tourism_dee_dee')}}
