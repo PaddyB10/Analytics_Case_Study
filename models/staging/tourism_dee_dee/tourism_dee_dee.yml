@@ -1,0 +1,6 @@
+sources:
+  - name: tourism_dee_dee
+    database: tourism_dataset_dee_dee
+    schema: tourism_dee_dee_schema
+    tables:
+      - name: raw_travel_user_data

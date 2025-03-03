@@ -1,0 +1,1 @@
+select * from {{source ('tourism_dee_dee','raw_travel_user_data')}}
