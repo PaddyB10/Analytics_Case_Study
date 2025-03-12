@@ -1,0 +1,7 @@
+sources:
+  - name: ctr_swekerr
+    database: ctr_swekerr
+    schema: ctr_swekerr
+    tables:
+      - name: ctr_swekerr
+  

@@ -1,0 +1,1 @@
+select * from {{source ("ctr_swekerr", "ctr_swekerr")}}
