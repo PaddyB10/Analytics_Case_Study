@@ -1,0 +1,1 @@
+select * from {{source ("tag_names_raw", "tag_names_raw")}}

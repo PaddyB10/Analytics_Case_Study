@@ -1,0 +1,26 @@
+sources:
+  - name: pageviews_raw
+    database: mumsnet_case_study
+    schema: mumsnet_case_study
+    tables:
+      - name: pageviews_raw
+  - name: replies_raw
+    database: mumsnet_case_study
+    schema: mumsnet_case_study
+    tables:
+      - name: replies_raw
+  - name: tags_raw
+    database: mumsnet_case_study
+    schema: mumsnet_case_study
+    tables:
+      - name: tags_raw
+  - name: tag_names_raw
+    database: mumsnet_case_study
+    schema: mumsnet_case_study
+    tables:
+      - name: tag_names_raw
+  - name: threads_raw
+    database: mumsnet_case_study
+    schema: mumsnet_case_study
+    tables:
+      - name: threads_raw        
