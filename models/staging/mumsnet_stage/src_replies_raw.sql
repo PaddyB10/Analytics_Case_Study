@@ -1,0 +1,1 @@
+select * from {{source ("replies_raw", "replies_raw")}}
