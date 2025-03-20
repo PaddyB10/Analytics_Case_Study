@@ -1,0 +1,1 @@
+select * from {{source ("pageviews_raw", "pageviews_raw")}}
